@@ -1,333 +1,81 @@
-/* index.html */
-/*global*/
-body {
-    font-family: Arial, Helvetica, sans-sarif;
-    font-size: 15px;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(244,244,244);
+body{
+    background-color: #a13e00;
 }
-ul {
-    margin: 0;
-    padding: 0;
+.nav-link{
+    color: #f7833b;
 }
-.container {
-    margin: auto;
-    width: 80%;
-    overflow: hidden;
-}
-/**/
 
-/*header*/
-header {
-    background: rgb(53, 66, 74);
-    color: rgb(255,255,255);
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: rgb(232, 73, 29) 3px solid;
+.nav-link:hover{
+    color: white;
 }
-header li {
-    float: left;
-    display: inline;
-    padding-right: 20px;
+
+.nav-item{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #f7833b;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.nav-item:hover{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #f7833b;
+    background-color: #f7833b;
+    color: white;
+}
+
+#text{
+    padding-top: 200px;
+}
+
+#hi{ /* Hi, I'm */
+    font-size: 1.5em;
+    color: #f7833b;
+}
+
+#name{ /* Damian Pacynko */
+    font-size: 6em;
+    color: white;
+}
+
+#desc-container{ 
+    padding-top: 50px;
+}
+
+#desc{ /* Description */
+    font-size: 1.45em;
+    color: lightgray;
+}
+
+#footer{
+    position: fixed;
+    bottom: 50px;
+}
+
+.list-group-item{
+    background-color: transparent;
+    border: none;
+}
+
+#icon{
+    color: black;
+}
+
+#icon:hover{
+    color: #f7833b;
+}
+
+.fa-linkedin{
     padding-left: 20px;
-    margin-top: 10px;
-    margin-right: 20px;
-}
-header a {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-}
-header a:hover {
-    color: rgb(232, 73, 29);
-}
-header #name {
-    float: left;
-}
-header #name h1 {
-    margin: 0;
-    color: rgb(232, 73, 29); 
-}
-#damian {
-    color: white;
-}
-header nav {
-    float: right;
-}
-/**/
-
-
-#intro {
-    background: url("images/soccer-ball.jpg");
-    background-position: 100% 50%;
-    min-height: 400px;
-    text-align: right;
-    color: rgb(255,255,255);
-}
-#intro h1{
-    margin-top: 100px;
-    font-size: 45px;
-}
-#intro p {
-    margin-left: 350px
 }
 
-
-
-.divider {
-    background-color: rgb(232, 73, 29);
-    min-height: 5px;
-}
-.tableContainer {
-    float: right;
-    margin-top: 100px;
-    margin-right: 100px;
-}
-.tableContainer table {
-    background-color: rgb(244,244,244);
-    color: black;
-    border: 1px solid #dddddd;
-    border-collapse: collapse;
-    width: 550px;
-    height: 300px;
-    text-align: center;
-}
-.tableContainer table th {
-    border-right: 1px solid #dddddd;
-    border-left: 1px solid #dddddd;
-    border-top: 1px solid #dddddd;
-}
-/* .even = every even td in the table*/
-.even {
-    background-color: rgb(53, 66, 74);
-    color: rgb(255,255,255);
-}
-#myImage {
-    float: left;
-    overflow: hidden;
-    margin-left: 80px;
-    margin-top: 10px;
-    width: 500px;
-    height: 689;
-    background-color: rgb(53, 66, 74);
-
-}
-#myImage img {
-    width: 436.25px;
-    height: 689px;
-    float: left;
-    padding: 30px 0 30px 30px;
+.fa-file-lines{
+    padding-left: 20px;
+    padding-top: 10px
 }
 
-
-
-.websiteLogo {
-    width: 15px;
-    height: 15px;
-}
-.websiteContainer {
-    float: right;
-    overflow: hidden;
-    display: inline-block;
-    width: 400px;
-    height: 200px;
-    border: 20px solid rgb(232, 73, 29);
-    background-color: rgb(53, 66, 74);
-    margin: 40px 150px 0 0;
-}
-.websiteContainer h2 {
-    padding: 12px 0 0 50px;
-    color: white;
-}
-.websiteContainer ul {
-    padding: 20px 0 0 50px;
-}
-.websiteContainer ul li {
-    list-style: none;
-    padding: 0 0 5px 5px;
-}
-.websiteContainer ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-}
-.websiteContainer ul li a:hover {
-    color: rgb(232, 73, 29);
-}
-
-
-
-footer {
-    clear: both;
-    background-color: rgb(232, 73, 29);
-    text-align: center;
-    height: 80px;
-    margin-bottom: 5px;
-}
-footer h4 {
-    padding: 5px 0 0 0;
-}
-footer div ul {
-    padding: 2.5px 0 0 0;
-}
-footer div ul li {
-    list-style: none;
-    display: inline;
-    padding: 0 0 0 20px; 
-}
-.socialMedia {
-    color: white;
-    
-}
-.socialMedia {
-    text-decoration: none;
-    color: rgb(53, 66, 74);
-    
-} 
-.socialMedia:hover {
-    color: rgb(244,244,244);
-}
-
-
-
-/* soccerGallery.html */
-
-#picture1 {
-    width: 540px;
-    height: 541px;
-    padding: 20px 0 20px 20px;
-}
-
-#picture1Holder{
-    width: 580px;
-    height: 581px;
-    background-color: rgb(53, 66, 74);
-    overflow: hidden;
-    margin: 10px 0 0 20px;
-    float: left;
-}
-
-#picture2 {
-    width: 620.75px;
-    height: 541px;
-    padding: 20px 0 0 20px;
-}
-
-#picture2Holder{
-    width: 660.75px;
-    height: 581px;
-    background-color: rgb(53, 66, 74);
-    overflow: hidden;
-    margin: 10px 20px 0 0;
-    float: right;
-}
-
-#picture3 {
-    width: 476.6328px;
-    height: 399.666666666666px;
-    transform: rotate(180deg);
-    padding: 20px 20px 20px 20px;
-}
-
-#picture3Holder{
-    width: 516.6328px;
-    height: 439.666666666666px;
-    background-color: rgb(53, 66, 74);
-    overflow: hidden;
-    margin: 10px 0 0 20px;
-    clear: both;
-    float: left;
-}
-#picture4 {
-    width: 481.16666666666666px;
-    height: 399.666666666666px;
-    padding: 20px 0 0 20px;
-}
-#picture4Holder{
-    width: 521.16666666666666px;
-    height: 439.666666666666px;
-    background-color: rgb(53, 66, 74);
-    overflow: hidden;
-    margin: 10px 20px 0 0;
-    float: right;
-}
-#picture5 {
-    width: 1250px;
-    height: 660.4px;
-    padding: 20px 20px 20px 20px;
-    
-}
-
-#picture5Holder{
-    width: 1290px;
-    height: 700.4px;
-    background-color: rgb(53, 66, 74);
-    overflow: hidden;
-    margin: 20px 30px 0 30px;
-    clear: both;
-    float: left;
-}
-#description {
-    clear: both;
-}
-
-.class {
-    color: black;
-    text-decoration: none;
-}
-.class:hover {
-    color: rgb(232, 73, 29);
-}
-.classEven:hover {
-    color: rgb(232, 73, 29);
-}
-.classEven {
-    color: white;
-    text-decoration: none;
-}
-
-#description {
-    clear:both;
-    padding: 50px 0 0 0;
-}
-#description h2 {
-    color: rgb(53, 66, 74);
-    font-size: 25px;
-}
-
-#compSci {
-    margin: 0 0 0 50px;
-}
-
-#chem {
-    margin: 0 0 0 50px;
-}
-
-#func {
-    margin: 0 0 0 50px;
-}
-
-#french {
-    margin: 0 0 0 50px;
-}
-
-#compSci p {
-    font-size: 15px;
-    line-height: 1.5;
-}
-
-#chem p {
-    font-size: 15px;
-    line-height: 1.5;
-}
-
-#func p {
-    font-size: 15px;
-    line-height: 1.5;
-}
-
-#french p {
-    font-size: 15px;
-    line-height: 1.5;
+.fa-at{
+    padding-left: 16px;
+    padding-top: 10px;
 }
